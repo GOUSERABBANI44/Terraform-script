@@ -12,4 +12,8 @@ resource "aws_vpc" "mvpc" {
   tags = {
     Name = "myvpc"
   }
+#you dont want to destroy the source then use this script
+# lifecycle {
+#  prevent_destroy = true
+#}
 }
